@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --charcoal: #141414;
+    --ivory: #F5F2ED;
+    --aqua: #87C1C1;
+    --gold: #C5A059;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--charcoal);
+    color: var(--ivory);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Utilities for H2O Professional Polish Theme */
+.font-serif-custom {
+  font-family: var(--font-serif);
+}
+
+.font-sans-custom {
+  font-family: var(--font-sans);
+}
+
+/* Glassmorphism & High-End Card Surfaces */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(245, 242, 237, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(245, 242, 237, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 242, 237, 0.3);
+}
+
+.text-aqua {
+  color: #87C1C1;
+}
+
+.border-ivory {
+  border-color: rgba(245, 242, 237, 0.15);
+}
+
+.gold-water-glow {
+  box-shadow: 0 0 35px -5px rgba(135, 193, 193, 0.18);
+}
+
+/* Ambient Subtle Water Shimmer */
+@keyframes ambientWaterFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-water-shimmer {
+  background: linear-gradient(135deg, rgba(135, 193, 193, 0.12), rgba(245, 242, 237, 0.05), rgba(20, 20, 20, 0.8));
+  background-size: 200% 200%;
+  animation: ambientWaterFlow 12s ease infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #87C1C1;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "H2O Salon Pune",
+  "description": "Complete, production-quality website for H2O — Premium Unisex Beauty & Hair Salon in Koregaon Park, Pune with smart booking, lookbook, before/after comparison, and verified services.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
